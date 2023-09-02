@@ -16,3 +16,4 @@ console.log(highlight('roller skate')); // Output: "You are ~roller skate~!"
 
 const mondayWork = function(activity = 'go to the office') {
   return `This Monday, I will ${activity}.`;
+}
