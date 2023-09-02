@@ -1,5 +1,5 @@
-const saturdayFunWork = function(activity = 'I want to roller skate') {
-  return `This Saturday, I will ${activity}.`;
+const saturdayFun = function(activity = "roller-skate") {
+  return `This Saturday, I want to ${activity}!`;
 }
 
 const wrapAdjective = function(character = '*') {
@@ -7,12 +7,12 @@ const wrapAdjective = function(character = '*') {
     return `You are ${character}${adjective}${character}!`;
   }
 }
-function saturdayFun(activity = "roller-skate") {
-  return `This Saturday, I want to ${activity}!`;
-}
 
-console.log(saturdayFun()); // Output: "I want to roller skate."
-console.log(saturdayFunk('roller skate')); // Output: "This Saturday, I want to roller skate."
+console.log(saturdayFun()); // Output: "This Saturday, I want to roller-skate."
+console.log(saturdayFun('roller skate')); // Output: "This Saturday, I want to roller skate."
 
 const highlight = wrapAdjective('~');
-console.log(highlight('roller skate')); // Output: "I will ~roller skate~!"
+console.log(highlight('roller skate')); // Output: "You are ~roller skate~!"
+
+const mondayWork = function(activity = 'go to the office') {
+  return `This Monday, I will ${activity}.`;
