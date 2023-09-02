@@ -6,9 +6,9 @@ const wrapAdjective = function(character = '*') {
   return function(adjective) {
     return `You are ${character}${adjective}${character}!`;
   }
-}
-console.log(mondayWork()); // Output: "This Monday, I will go to the office."
-console.log(mondayWork('work from home')); // Output: "This Monday, I will work from home."
+}console.log(saturdayFun("go hiking"));
+// Output: "This Saturday, I want to go hiking!"
+
 
 const highlight = wrapAdjective('~');
 console.log(highlight('awesome')); // Output: "You are ~awesome~!"
