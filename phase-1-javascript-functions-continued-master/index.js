@@ -1,20 +1,14 @@
 // code your solution here
-function razzle() {
-    console.log("You've been razzled!");
+const mondayWork = function(activity = 'go to the office') {
+  return `This Monday, I will ${activity}.`;
+}
+const wrapAdjective = function(character = '*') {
+  return function(adjective) {
+    return `You are ${character}${adjective}${character}!`;
   }
-  
-  razzle(); //=> "You've been razzled!"
-  
-  function razzle(lawyer = "Billy", target = "'em") {
-    console.log(`${lawyer} razzle-dazzles ${target}!`);
-  }
-  
-  razzle(); //=> Billy razzle-dazzles 'em!
-  razzle("Methuselah", "T'challah"); //=> Methuselah razzle-dazzles T'challah!
-  
-  function saturdayFun(activity = "roller-skate") {
-    return `This Saturday, I want to ${activity}!`;
-  }
+}
+console.log(mondayWork()); // Output: "This Monday, I will go to the office."
+console.log(mondayWork('work from home')); // Output: "This Monday, I will work from home."
 
-  console.log(saturdayFun("go hiking"));
-// Output: "This Saturday, I want to go hiking!"
+const highlight = wrapAdjective('~');
+console.log(highlight('awesome')); // Output: "You are ~awesome~!"
